@@ -1,0 +1,75 @@
+body {
+    background: #301934;
+    margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: whitesmoke;
+  animation-name: shame;
+  animation-duration:4s;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  height: 10%;
+  color: whitesmoke;
+  font-style: italic;
+}
+
+#image{
+  float: left;
+}
+
+.column{
+  text-align: center;
+  float: left;
+  width: 50%;
+  padding: 230px 50px 230px 50px;
+  color: whitesmoke;
+  font-style: italic;
+  animation-name: shame;
+  animation-duration:4s;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background: #501379;
+  color: whitesmoke;
+}
+
+#info {
+  position: relative;
+  animation-name: shame1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+
+@keyframes shame {
+  from {color: #301934;}
+  to {color: whitesmoke;}
+}
+
+@keyframes shame1 {
+  0% {color: #301934; bottom: -100px;}
+  100% {color: whitesmoke; bottom: 0px;}
+}
